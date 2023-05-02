@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+.foodCard{
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    color: #282c34;
+    font-family: 'Raleway', sans-serif;
+}
+.cardDecor{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    margin: 10px;
+}
+.foodCard img{
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+}
+.data{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 20px;
+    justify-content: space-evenly;
+}
+
+.cardDecor:hover{
+    border: 4px solid white;
+    padding: 10px;
+    transition: 0.2s ease-in;
+}
+.readButton{
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    background-color: #282c34;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid #282c34;
+    font-family: 'Raleway', sans-serif;
+}
+.readButton:hover{
+    background-color: white;
+    color: #282c34;
+    transition: 0.5s ease-out;
+}
+
+@media (max-width:768px) {
+    .foodCard{
+        display: flex;
+        flex-direction: column;
+    }    
+    .foodCard img{
+        width: 100%;
+    }
+    .data{
+        padding-left: 0px;
+    }
+    .data h1{
+        text-align: center;
+        width: 100%;
+        font-size: 30px;
+    }
+    .data p {
+        font-size: 16px;
+        line-height: 22px;
+        text-align: justify;
+    }
+    .readButton{
+        font-size: 14px;
+        padding: 14px;
+    }
+}
